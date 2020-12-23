@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './Navbar';
+import Todo from './Todo';
+import Form from './Form'
+import Babes from './Babes';
 
 function App() {
+  // let x = 'Some Value'
+  // let len = x.length
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* {x} length is {len} */}
+      <Navbar/>
+      <Todo todoText='Reply on Instagram Story'/>
+      <Form />
+      <Babes/>
     </div>
   );
 }
