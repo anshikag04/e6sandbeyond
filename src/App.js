@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import StateLearn from "./StateLearn";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <StateLearn />
     </div>
-  );
+  )
 }
+
+// ONLY ONE THING that props do => "One way Data-flow"
+// One way Data-flow matlab Data ka PARENT TO CHILD flow hona
+// Jaha Par component display karna hai waha par kuch values hai jo hume Component ke andar bhejni hai 
 
 export default App;
